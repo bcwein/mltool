@@ -49,5 +49,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: |
           pydocstyle .
+      - run: |
           pycodestyle .
+      - run: |
           pytest -vv
